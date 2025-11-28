@@ -21,7 +21,7 @@ interface Word {
 
 async function getWordTimestamps(audioPath: string): Promise<Word[]> {
   const cacheFile = audioPath + '.words.json'
-  
+
   if (fs.existsSync(cacheFile)) {
     console.log('Using cached timestamps')
     return JSON.parse(fs.readFileSync(cacheFile, 'utf-8'))
@@ -122,7 +122,7 @@ async function testInfill(
   const fadeMs = 50
   const leftFadedPath = leftPath.replace('.wav', '-faded.wav')
   const rightFadedPath = rightPath.replace('.wav', '-faded.wav')
-  
+
   await addFadeOut(leftPath, leftFadedPath, fadeMs)
   await addFadeIn(rightPath, rightFadedPath, fadeMs)
 
@@ -130,7 +130,7 @@ async function testInfill(
   const rightStream = fs.createReadStream(rightFadedPath)
 
   const response = await cartesia.infill.bytes(leftStream, rightStream, {
-    modelId: 'sonic-2',
+    modelId: 'sonic-3',
     language: 'en',
     transcript: middleText,
     voiceId,
@@ -138,7 +138,7 @@ async function testInfill(
     outputFormatEncoding: 'pcm_s16le',
     outputFormatSampleRate: 44100,
   })
-  
+
   // Clean up faded temp files
   fs.unlinkSync(leftFadedPath)
   fs.unlinkSync(rightFadedPath)
