@@ -1,0 +1,2197 @@
+[
+  {
+    "word": " Yo,",
+    "start": 0.24,
+    "end": 1.1
+  },
+  {
+    "word": " my",
+    "start": 1.1,
+    "end": 1.22
+  },
+  {
+    "word": " name",
+    "start": 1.22,
+    "end": 1.4
+  },
+  {
+    "word": " is",
+    "start": 1.4,
+    "end": 1.78
+  },
+  {
+    "word": " Benjamin",
+    "start": 1.78,
+    "end": 2.28
+  },
+  {
+    "word": " and",
+    "start": 2.28,
+    "end": 2.84
+  },
+  {
+    "word": " this",
+    "start": 2.84,
+    "end": 3.32
+  },
+  {
+    "word": " is",
+    "start": 3.32,
+    "end": 3.66
+  },
+  {
+    "word": " Custom",
+    "start": 3.66,
+    "end": 4.22
+  },
+  {
+    "word": " Cursors",
+    "start": 4.22,
+    "end": 4.84
+  },
+  {
+    "word": " in",
+    "start": 4.84,
+    "end": 5.22
+  },
+  {
+    "word": " Framer.",
+    "start": 5.22,
+    "end": 6.16
+  },
+  {
+    "word": " So,",
+    "start": 6.16,
+    "end": 7.12
+  },
+  {
+    "word": " without",
+    "start": 7.12,
+    "end": 7.22
+  },
+  {
+    "word": " further",
+    "start": 7.22,
+    "end": 7.6
+  },
+  {
+    "word": " ado,",
+    "start": 7.6,
+    "end": 8.38
+  },
+  {
+    "word": " let's",
+    "start": 8.38,
+    "end": 8.56
+  },
+  {
+    "word": " dive",
+    "start": 8.56,
+    "end": 8.86
+  },
+  {
+    "word": " right",
+    "start": 8.86,
+    "end": 9.4
+  },
+  {
+    "word": " in.",
+    "start": 9.4,
+    "end": 10.1
+  },
+  {
+    "word": " As",
+    "start": 10.1,
+    "end": 10.82
+  },
+  {
+    "word": " you",
+    "start": 10.82,
+    "end": 10.9
+  },
+  {
+    "word": " can",
+    "start": 10.9,
+    "end": 11.06
+  },
+  {
+    "word": " see,",
+    "start": 11.06,
+    "end": 11.54
+  },
+  {
+    "word": " we",
+    "start": 11.54,
+    "end": 11.62
+  },
+  {
+    "word": " currently",
+    "start": 11.62,
+    "end": 12.02
+  },
+  {
+    "word": " just",
+    "start": 12.02,
+    "end": 12.34
+  },
+  {
+    "word": " have",
+    "start": 12.34,
+    "end": 12.7
+  },
+  {
+    "word": " the",
+    "start": 12.7,
+    "end": 12.98
+  },
+  {
+    "word": " native",
+    "start": 12.98,
+    "end": 13.52
+  },
+  {
+    "word": " desktop",
+    "start": 13.52,
+    "end": 14.08
+  },
+  {
+    "word": " cursors",
+    "start": 14.08,
+    "end": 14.78
+  },
+  {
+    "word": " on",
+    "start": 14.78,
+    "end": 15.08
+  },
+  {
+    "word": " this",
+    "start": 15.08,
+    "end": 15.34
+  },
+  {
+    "word": " page.",
+    "start": 15.34,
+    "end": 16.04
+  },
+  {
+    "word": " And",
+    "start": 16.04,
+    "end": 16.96
+  },
+  {
+    "word": " we",
+    "start": 16.96,
+    "end": 17.14
+  },
+  {
+    "word": " would",
+    "start": 17.14,
+    "end": 17.3
+  },
+  {
+    "word": " like",
+    "start": 17.3,
+    "end": 17.46
+  },
+  {
+    "word": " to",
+    "start": 17.46,
+    "end": 17.66
+  },
+  {
+    "word": " replace",
+    "start": 17.66,
+    "end": 18.24
+  },
+  {
+    "word": " it",
+    "start": 18.24,
+    "end": 18.56
+  },
+  {
+    "word": " with",
+    "start": 18.56,
+    "end": 18.9
+  },
+  {
+    "word": " this",
+    "start": 18.9,
+    "end": 19.42
+  },
+  {
+    "word": " custom",
+    "start": 19.42,
+    "end": 20.02
+  },
+  {
+    "word": " component.",
+    "start": 20.02,
+    "end": 21.48
+  },
+  {
+    "word": " I",
+    "start": 21,
+    "end": 21.64
+  },
+  {
+    "word": " will",
+    "start": 21.64,
+    "end": 21.94
+  },
+  {
+    "word": " double",
+    "start": 21.94,
+    "end": 22.24
+  },
+  {
+    "word": " click",
+    "start": 22.24,
+    "end": 22.58
+  },
+  {
+    "word": " into",
+    "start": 22.58,
+    "end": 22.94
+  },
+  {
+    "word": " it",
+    "start": 22.94,
+    "end": 23.18
+  },
+  {
+    "word": " to",
+    "start": 23.18,
+    "end": 23.38
+  },
+  {
+    "word": " show",
+    "start": 23.38,
+    "end": 23.64
+  },
+  {
+    "word": " you",
+    "start": 23.64,
+    "end": 23.88
+  },
+  {
+    "word": " how",
+    "start": 23.88,
+    "end": 24.22
+  },
+  {
+    "word": " it's",
+    "start": 24.22,
+    "end": 24.66
+  },
+  {
+    "word": " set",
+    "start": 24.66,
+    "end": 24.98
+  },
+  {
+    "word": " up.",
+    "start": 24.98,
+    "end": 25.9
+  },
+  {
+    "word": " As",
+    "start": 25.9,
+    "end": 26.72
+  },
+  {
+    "word": " you",
+    "start": 26.72,
+    "end": 26.8
+  },
+  {
+    "word": " can",
+    "start": 26.8,
+    "end": 26.92
+  },
+  {
+    "word": " see",
+    "start": 26.92,
+    "end": 27.16
+  },
+  {
+    "word": " we",
+    "start": 27.16,
+    "end": 27.38
+  },
+  {
+    "word": " have",
+    "start": 27.38,
+    "end": 27.64
+  },
+  {
+    "word": " a",
+    "start": 27.64,
+    "end": 27.82
+  },
+  {
+    "word": " bunch",
+    "start": 27.82,
+    "end": 28.12
+  },
+  {
+    "word": " of",
+    "start": 28.12,
+    "end": 28.32
+  },
+  {
+    "word": " different",
+    "start": 28.32,
+    "end": 28.68
+  },
+  {
+    "word": " variants",
+    "start": 28.68,
+    "end": 29.32
+  },
+  {
+    "word": " here",
+    "start": 29.32,
+    "end": 29.66
+  },
+  {
+    "word": " starting",
+    "start": 29.66,
+    "end": 30.119999999999997
+  },
+  {
+    "word": " with",
+    "start": 30.119999999999997,
+    "end": 30.4
+  },
+  {
+    "word": " a",
+    "start": 30.4,
+    "end": 30.68
+  },
+  {
+    "word": " pressed",
+    "start": 30.68,
+    "end": 31.119999999999997
+  },
+  {
+    "word": " variant",
+    "start": 31.119999999999997,
+    "end": 31.560000000000002
+  },
+  {
+    "word": " that",
+    "start": 31.560000000000002,
+    "end": 32.3
+  },
+  {
+    "word": " simply",
+    "start": 32.3,
+    "end": 32.68
+  },
+  {
+    "word": " scales",
+    "start": 32.68,
+    "end": 33.18
+  },
+  {
+    "word": " down",
+    "start": 33.18,
+    "end": 33.56
+  },
+  {
+    "word": " the",
+    "start": 33.56,
+    "end": 33.82
+  },
+  {
+    "word": " circle",
+    "start": 33.82,
+    "end": 34.22
+  },
+  {
+    "word": " on",
+    "start": 34.22,
+    "end": 34.54
+  },
+  {
+    "word": " mouse",
+    "start": 34.54,
+    "end": 34.96
+  },
+  {
+    "word": " down.",
+    "start": 34.96,
+    "end": 35.58
+  },
+  {
+    "word": " And",
+    "start": 35.58,
+    "end": 37.06
+  },
+  {
+    "word": " then",
+    "start": 37.06,
+    "end": 37.28
+  },
+  {
+    "word": " there's",
+    "start": 37.28,
+    "end": 37.58
+  },
+  {
+    "word": " a",
+    "start": 37.58,
+    "end": 37.64
+  },
+  {
+    "word": " few",
+    "start": 37.64,
+    "end": 37.8
+  },
+  {
+    "word": " variants",
+    "start": 37.8,
+    "end": 38.34
+  },
+  {
+    "word": " where",
+    "start": 38.34,
+    "end": 38.6
+  },
+  {
+    "word": " we",
+    "start": 38.6,
+    "end": 38.82
+  },
+  {
+    "word": " show",
+    "start": 38.82,
+    "end": 39.28
+  },
+  {
+    "word": " these",
+    "start": 39.28,
+    "end": 39.68
+  },
+  {
+    "word": " different",
+    "start": 39.68,
+    "end": 40.019999999999996
+  },
+  {
+    "word": " titles",
+    "start": 40.019999999999996,
+    "end": 40.5
+  },
+  {
+    "word": " of",
+    "start": 40.5,
+    "end": 40.82
+  },
+  {
+    "word": " sites",
+    "start": 40.82,
+    "end": 41.239999999999995
+  },
+  {
+    "word": " made",
+    "start": 41.239999999999995,
+    "end": 41.760000000000005
+  },
+  {
+    "word": " in",
+    "start": 41.760000000000005,
+    "end": 42.04
+  },
+  {
+    "word": " Framer.",
+    "start": 42.04,
+    "end": 42.86
+  },
+  {
+    "word": " And",
+    "start": 43.75,
+    "end": 44.41
+  },
+  {
+    "word": " we",
+    "start": 44.41,
+    "end": 44.63
+  },
+  {
+    "word": " would",
+    "start": 44.63,
+    "end": 44.81
+  },
+  {
+    "word": " like",
+    "start": 44.81,
+    "end": 45.01
+  },
+  {
+    "word": " to",
+    "start": 45.01,
+    "end": 45.19
+  },
+  {
+    "word": " animate",
+    "start": 45.19,
+    "end": 45.71
+  },
+  {
+    "word": " between",
+    "start": 45.71,
+    "end": 46.19
+  },
+  {
+    "word": " all",
+    "start": 46.19,
+    "end": 46.63
+  },
+  {
+    "word": " of",
+    "start": 46.63,
+    "end": 46.79
+  },
+  {
+    "word": " these",
+    "start": 46.79,
+    "end": 47.13
+  },
+  {
+    "word": " seamlessly.",
+    "start": 47.13,
+    "end": 48.35
+  },
+  {
+    "word": " Specifically,",
+    "start": 48.35,
+    "end": 49.67
+  },
+  {
+    "word": " as",
+    "start": 49.67,
+    "end": 50.17
+  },
+  {
+    "word": " we",
+    "start": 50.17,
+    "end": 50.35
+  },
+  {
+    "word": " press",
+    "start": 50.35,
+    "end": 50.81
+  },
+  {
+    "word": " down,",
+    "start": 50.81,
+    "end": 51.51
+  },
+  {
+    "word": " I",
+    "start": 51.51,
+    "end": 52.47
+  },
+  {
+    "word": " would",
+    "start": 52.47,
+    "end": 52.63
+  },
+  {
+    "word": " like",
+    "start": 52.63,
+    "end": 52.85
+  },
+  {
+    "word": " the",
+    "start": 52.85,
+    "end": 53.09
+  },
+  {
+    "word": " circle",
+    "start": 53.09,
+    "end": 53.49
+  },
+  {
+    "word": " to",
+    "start": 53.49,
+    "end": 53.75
+  },
+  {
+    "word": " scale",
+    "start": 53.75,
+    "end": 54.09
+  },
+  {
+    "word": " down.",
+    "start": 54.09,
+    "end": 54.83
+  },
+  {
+    "word": " And",
+    "start": 54.83,
+    "end": 57.33
+  },
+  {
+    "word": " as",
+    "start": 57.33,
+    "end": 57.61
+  },
+  {
+    "word": " we",
+    "start": 57.61,
+    "end": 57.769999999999996
+  },
+  {
+    "word": " hover",
+    "start": 57.769999999999996,
+    "end": 58.11
+  },
+  {
+    "word": " over",
+    "start": 58.11,
+    "end": 58.43
+  },
+  {
+    "word": " the",
+    "start": 58.43,
+    "end": 58.71
+  },
+  {
+    "word": " different",
+    "start": 58.71,
+    "end": 59.07
+  },
+  {
+    "word": " cards,",
+    "start": 59.07,
+    "end": 59.870000000000005
+  },
+  {
+    "word": " I",
+    "start": 59.870000000000005,
+    "end": 60.25
+  },
+  {
+    "word": " would",
+    "start": 60.25,
+    "end": 60.41
+  },
+  {
+    "word": " like",
+    "start": 60.41,
+    "end": 60.629999999999995
+  },
+  {
+    "word": " the",
+    "start": 60.629999999999995,
+    "end": 60.81
+  },
+  {
+    "word": " cursor",
+    "start": 60.81,
+    "end": 61.21
+  },
+  {
+    "word": " to",
+    "start": 61.21,
+    "end": 61.510000000000005
+  },
+  {
+    "word": " reflect",
+    "start": 61.510000000000005,
+    "end": 61.95
+  },
+  {
+    "word": " the",
+    "start": 61.95,
+    "end": 62.21
+  },
+  {
+    "word": " proper",
+    "start": 62.21,
+    "end": 62.629999999999995
+  },
+  {
+    "word": " title.",
+    "start": 62.629999999999995,
+    "end": 63.57
+  },
+  {
+    "word": " So",
+    "start": 63.57,
+    "end": 64.37
+  },
+  {
+    "word": " how",
+    "start": 64.37,
+    "end": 64.57
+  },
+  {
+    "word": " do",
+    "start": 64.57,
+    "end": 64.69
+  },
+  {
+    "word": " we",
+    "start": 64.69,
+    "end": 64.81
+  },
+  {
+    "word": " add",
+    "start": 64.81,
+    "end": 65.05
+  },
+  {
+    "word": " our",
+    "start": 65.05,
+    "end": 65.31
+  },
+  {
+    "word": " first",
+    "start": 65.31,
+    "end": 65.81
+  },
+  {
+    "word": " custom",
+    "start": 65.81,
+    "end": 66.47
+  },
+  {
+    "word": " cursor?",
+    "start": 66.47,
+    "end": 67.89
+  },
+  {
+    "word": " To",
+    "start": 68.365,
+    "end": 68.545
+  },
+  {
+    "word": " start,",
+    "start": 68.545,
+    "end": 69.165
+  },
+  {
+    "word": " I'll",
+    "start": 69.165,
+    "end": 69.385
+  },
+  {
+    "word": " select",
+    "start": 69.385,
+    "end": 69.625
+  },
+  {
+    "word": " the",
+    "start": 69.625,
+    "end": 69.825
+  },
+  {
+    "word": " entirety",
+    "start": 69.825,
+    "end": 70.385
+  },
+  {
+    "word": " of",
+    "start": 70.385,
+    "end": 70.765
+  },
+  {
+    "word": " the",
+    "start": 70.765,
+    "end": 70.965
+  },
+  {
+    "word": " page,",
+    "start": 70.965,
+    "end": 71.725
+  },
+  {
+    "word": " our",
+    "start": 71.725,
+    "end": 72.325
+  },
+  {
+    "word": " desktop",
+    "start": 72.325,
+    "end": 72.745
+  },
+  {
+    "word": " breakpoint.",
+    "start": 72.745,
+    "end": 73.865
+  },
+  {
+    "word": " And",
+    "start": 73.865,
+    "end": 74.585
+  },
+  {
+    "word": " then",
+    "start": 74.585,
+    "end": 74.785
+  },
+  {
+    "word": " I'll",
+    "start": 74.785,
+    "end": 75.065
+  },
+  {
+    "word": " head",
+    "start": 75.065,
+    "end": 75.205
+  },
+  {
+    "word": " over",
+    "start": 75.205,
+    "end": 75.465
+  },
+  {
+    "word": " to",
+    "start": 75.465,
+    "end": 75.66499999999999
+  },
+  {
+    "word": " the",
+    "start": 75.66499999999999,
+    "end": 75.945
+  },
+  {
+    "word": " new",
+    "start": 75.945,
+    "end": 76.385
+  },
+  {
+    "word": " cursor",
+    "start": 76.385,
+    "end": 76.985
+  },
+  {
+    "word": " property",
+    "start": 76.985,
+    "end": 77.685
+  },
+  {
+    "word": " in",
+    "start": 77.685,
+    "end": 78.58500000000001
+  },
+  {
+    "word": " the",
+    "start": 78.58500000000001,
+    "end": 78.945
+  },
+  {
+    "word": " property",
+    "start": 78.945,
+    "end": 79.485
+  },
+  {
+    "word": " panel.",
+    "start": 79.485,
+    "end": 80.345
+  },
+  {
+    "word": " Here",
+    "start": 80.345,
+    "end": 81.185
+  },
+  {
+    "word": " we",
+    "start": 81.185,
+    "end": 81.425
+  },
+  {
+    "word": " can",
+    "start": 81.425,
+    "end": 81.605
+  },
+  {
+    "word": " pick",
+    "start": 81.605,
+    "end": 81.925
+  },
+  {
+    "word": " between",
+    "start": 81.925,
+    "end": 82.345
+  },
+  {
+    "word": " a",
+    "start": 82.345,
+    "end": 82.625
+  },
+  {
+    "word": " web",
+    "start": 82.625,
+    "end": 83.045
+  },
+  {
+    "word": " cursor,",
+    "start": 83.045,
+    "end": 83.625
+  },
+  {
+    "word": " which",
+    "start": 83.625,
+    "end": 83.865
+  },
+  {
+    "word": " is",
+    "start": 83.865,
+    "end": 84.045
+  },
+  {
+    "word": " the",
+    "start": 84.045,
+    "end": 84.265
+  },
+  {
+    "word": " existing",
+    "start": 84.265,
+    "end": 84.965
+  },
+  {
+    "word": " CSS",
+    "start": 84.965,
+    "end": 85.725
+  },
+  {
+    "word": " based",
+    "start": 85.725,
+    "end": 86.305
+  },
+  {
+    "word": " cursors.",
+    "start": 86.305,
+    "end": 87.825
+  },
+  {
+    "word": " or",
+    "start": 87.545,
+    "end": 87.845
+  },
+  {
+    "word": " the",
+    "start": 87.845,
+    "end": 88.185
+  },
+  {
+    "word": " new",
+    "start": 88.185,
+    "end": 88.565
+  },
+  {
+    "word": " custom",
+    "start": 88.565,
+    "end": 89.185
+  },
+  {
+    "word": " cursor",
+    "start": 89.185,
+    "end": 89.745
+  },
+  {
+    "word": " feature.",
+    "start": 89.745,
+    "end": 90.645
+  },
+  {
+    "word": " I'll",
+    "start": 90.645,
+    "end": 91.065
+  },
+  {
+    "word": " select",
+    "start": 91.065,
+    "end": 91.345
+  },
+  {
+    "word": " the",
+    "start": 91.345,
+    "end": 91.585
+  },
+  {
+    "word": " custom",
+    "start": 91.585,
+    "end": 92.145
+  },
+  {
+    "word": " option",
+    "start": 92.145,
+    "end": 92.645
+  },
+  {
+    "word": " and",
+    "start": 92.645,
+    "end": 93.565
+  },
+  {
+    "word": " here",
+    "start": 93.565,
+    "end": 93.825
+  },
+  {
+    "word": " we",
+    "start": 93.825,
+    "end": 94.085
+  },
+  {
+    "word": " can",
+    "start": 94.085,
+    "end": 94.245
+  },
+  {
+    "word": " select",
+    "start": 94.245,
+    "end": 94.585
+  },
+  {
+    "word": " any",
+    "start": 94.585,
+    "end": 94.965
+  },
+  {
+    "word": " component",
+    "start": 94.965,
+    "end": 95.605
+  },
+  {
+    "word": " to",
+    "start": 95.605,
+    "end": 96.045
+  },
+  {
+    "word": " become",
+    "start": 96.045,
+    "end": 96.445
+  },
+  {
+    "word": " our",
+    "start": 96.445,
+    "end": 96.765
+  },
+  {
+    "word": " custom",
+    "start": 96.765,
+    "end": 97.16499999999999
+  },
+  {
+    "word": " cursor.",
+    "start": 97.16499999999999,
+    "end": 97.865
+  },
+  {
+    "word": " So",
+    "start": 97.865,
+    "end": 98.365
+  },
+  {
+    "word": " I'll",
+    "start": 98.365,
+    "end": 98.685
+  },
+  {
+    "word": " type",
+    "start": 98.685,
+    "end": 99.025
+  },
+  {
+    "word": " label",
+    "start": 99.025,
+    "end": 99.785
+  },
+  {
+    "word": " to",
+    "start": 99.785,
+    "end": 100.58500000000001
+  },
+  {
+    "word": " select",
+    "start": 100.58500000000001,
+    "end": 100.865
+  },
+  {
+    "word": " the",
+    "start": 100.865,
+    "end": 101.125
+  },
+  {
+    "word": " component",
+    "start": 101.125,
+    "end": 101.605
+  },
+  {
+    "word": " we",
+    "start": 101.605,
+    "end": 101.845
+  },
+  {
+    "word": " just",
+    "start": 101.845,
+    "end": 102.145
+  },
+  {
+    "word": " looked",
+    "start": 102.145,
+    "end": 102.485
+  },
+  {
+    "word": " at",
+    "start": 102.485,
+    "end": 102.765
+  },
+  {
+    "word": " and",
+    "start": 102.765,
+    "end": 103.505
+  },
+  {
+    "word": " then",
+    "start": 103.505,
+    "end": 103.785
+  },
+  {
+    "word": " once",
+    "start": 103.785,
+    "end": 104.345
+  },
+  {
+    "word": " selected",
+    "start": 104.345,
+    "end": 104.885
+  },
+  {
+    "word": " I",
+    "start": 104.885,
+    "end": 105.305
+  },
+  {
+    "word": " can",
+    "start": 105.305,
+    "end": 105.465
+  },
+  {
+    "word": " pick",
+    "start": 105.465,
+    "end": 105.725
+  },
+  {
+    "word": " any",
+    "start": 105.725,
+    "end": 106.065
+  },
+  {
+    "word": " variant",
+    "start": 106.065,
+    "end": 106.565
+  },
+  {
+    "word": " to",
+    "start": 106.565,
+    "end": 106.905
+  },
+  {
+    "word": " start",
+    "start": 106.905,
+    "end": 107.325
+  },
+  {
+    "word": " with.",
+    "start": 107.325,
+    "end": 108.525
+  },
+  {
+    "word": " So",
+    "start": 108.125,
+    "end": 108.745
+  },
+  {
+    "word": " the",
+    "start": 108.745,
+    "end": 108.905
+  },
+  {
+    "word": " default",
+    "start": 108.905,
+    "end": 109.305
+  },
+  {
+    "word": " is",
+    "start": 109.305,
+    "end": 109.545
+  },
+  {
+    "word": " just",
+    "start": 109.545,
+    "end": 109.785
+  },
+  {
+    "word": " fine.",
+    "start": 109.785,
+    "end": 110.545
+  },
+  {
+    "word": " And",
+    "start": 110.545,
+    "end": 111.065
+  },
+  {
+    "word": " then",
+    "start": 111.065,
+    "end": 111.165
+  },
+  {
+    "word": " we",
+    "start": 111.165,
+    "end": 111.305
+  },
+  {
+    "word": " can",
+    "start": 111.305,
+    "end": 111.485
+  },
+  {
+    "word": " decide",
+    "start": 111.485,
+    "end": 111.885
+  },
+  {
+    "word": " to",
+    "start": 111.885,
+    "end": 112.185
+  },
+  {
+    "word": " either",
+    "start": 112.185,
+    "end": 112.525
+  },
+  {
+    "word": " have",
+    "start": 112.525,
+    "end": 112.805
+  },
+  {
+    "word": " it",
+    "start": 112.805,
+    "end": 112.985
+  },
+  {
+    "word": " follow",
+    "start": 112.985,
+    "end": 113.465
+  },
+  {
+    "word": " the",
+    "start": 113.465,
+    "end": 113.825
+  },
+  {
+    "word": " existing",
+    "start": 113.825,
+    "end": 114.365
+  },
+  {
+    "word": " cursor",
+    "start": 114.365,
+    "end": 114.865
+  },
+  {
+    "word": " or",
+    "start": 114.865,
+    "end": 115.485
+  },
+  {
+    "word": " to",
+    "start": 115.485,
+    "end": 115.685
+  },
+  {
+    "word": " replace",
+    "start": 115.685,
+    "end": 116.16499999999999
+  },
+  {
+    "word": " it",
+    "start": 116.16499999999999,
+    "end": 116.365
+  },
+  {
+    "word": " entirely",
+    "start": 116.365,
+    "end": 117.045
+  },
+  {
+    "word": " and",
+    "start": 117.045,
+    "end": 117.965
+  },
+  {
+    "word": " to",
+    "start": 117.965,
+    "end": 118.105
+  },
+  {
+    "word": " add",
+    "start": 118.105,
+    "end": 118.305
+  },
+  {
+    "word": " a",
+    "start": 118.305,
+    "end": 118.465
+  },
+  {
+    "word": " transition,",
+    "start": 118.465,
+    "end": 118.985
+  },
+  {
+    "word": " which",
+    "start": 118.985,
+    "end": 119.545
+  },
+  {
+    "word": " we'll",
+    "start": 119.545,
+    "end": 119.745
+  },
+  {
+    "word": " look",
+    "start": 119.745,
+    "end": 119.965
+  },
+  {
+    "word": " at",
+    "start": 119.965,
+    "end": 120.245
+  },
+  {
+    "word": " a",
+    "start": 120.245,
+    "end": 120.465
+  },
+  {
+    "word": " bit",
+    "start": 120.465,
+    "end": 120.685
+  },
+  {
+    "word": " later.",
+    "start": 120.685,
+    "end": 121.425
+  },
+  {
+    "word": " So",
+    "start": 121.425,
+    "end": 121.765
+  },
+  {
+    "word": " I'll",
+    "start": 121.765,
+    "end": 122.005
+  },
+  {
+    "word": " close",
+    "start": 122.005,
+    "end": 122.505
+  },
+  {
+    "word": " this",
+    "start": 122.505,
+    "end": 122.905
+  },
+  {
+    "word": " pop",
+    "start": 122.905,
+    "end": 123.225
+  },
+  {
+    "word": " out",
+    "start": 123.225,
+    "end": 123.465
+  },
+  {
+    "word": " and",
+    "start": 123.465,
+    "end": 123.805
+  },
+  {
+    "word": " let's",
+    "start": 123.805,
+    "end": 124.205
+  },
+  {
+    "word": " give",
+    "start": 124.205,
+    "end": 124.405
+  },
+  {
+    "word": " this",
+    "start": 124.405,
+    "end": 124.785
+  },
+  {
+    "word": " a",
+    "start": 124.785,
+    "end": 125.105
+  },
+  {
+    "word": " preview.",
+    "start": 125.105,
+    "end": 125.905
+  },
+  {
+    "word": " As",
+    "start": 125.905,
+    "end": 126.525
+  },
+  {
+    "word": " you",
+    "start": 126.525,
+    "end": 126.625
+  },
+  {
+    "word": " can",
+    "start": 126.625,
+    "end": 126.765
+  },
+  {
+    "word": " see,",
+    "start": 126.765,
+    "end": 127.185
+  },
+  {
+    "word": " we",
+    "start": 127.185,
+    "end": 127.405
+  },
+  {
+    "word": " have",
+    "start": 127.405,
+    "end": 127.685
+  },
+  {
+    "word": " successfully",
+    "start": 127.685,
+    "end": 128.585
+  },
+  {
+    "word": " replaced",
+    "start": 128.585,
+    "end": 129.70499999999998
+  },
+  {
+    "word": " the",
+    "start": 129.375,
+    "end": 130.015
+  },
+  {
+    "word": " default",
+    "start": 130.015,
+    "end": 130.655
+  },
+  {
+    "word": " cursor",
+    "start": 130.655,
+    "end": 131.115
+  },
+  {
+    "word": " with",
+    "start": 131.115,
+    "end": 131.835
+  },
+  {
+    "word": " our",
+    "start": 131.835,
+    "end": 132.075
+  },
+  {
+    "word": " own",
+    "start": 132.075,
+    "end": 132.515
+  },
+  {
+    "word": " little",
+    "start": 132.515,
+    "end": 132.975
+  },
+  {
+    "word": " component.",
+    "start": 132.975,
+    "end": 134.015
+  },
+  {
+    "word": " And",
+    "start": 134.015,
+    "end": 134.395
+  },
+  {
+    "word": " as",
+    "start": 134.395,
+    "end": 134.635
+  },
+  {
+    "word": " I",
+    "start": 134.635,
+    "end": 134.755
+  },
+  {
+    "word": " click",
+    "start": 134.755,
+    "end": 135.135
+  },
+  {
+    "word": " to",
+    "start": 135.135,
+    "end": 135.395
+  },
+  {
+    "word": " press",
+    "start": 135.395,
+    "end": 135.675
+  },
+  {
+    "word": " down,",
+    "start": 135.675,
+    "end": 136.435
+  },
+  {
+    "word": " it",
+    "start": 136.435,
+    "end": 136.515
+  },
+  {
+    "word": " animates",
+    "start": 136.515,
+    "end": 137.115
+  },
+  {
+    "word": " to",
+    "start": 137.115,
+    "end": 137.335
+  },
+  {
+    "word": " the",
+    "start": 137.335,
+    "end": 137.655
+  },
+  {
+    "word": " pressed",
+    "start": 137.655,
+    "end": 138.155
+  },
+  {
+    "word": " variant,",
+    "start": 138.155,
+    "end": 139.115
+  },
+  {
+    "word": " yet",
+    "start": 139.115,
+    "end": 139.515
+  },
+  {
+    "word": " on",
+    "start": 139.515,
+    "end": 139.815
+  },
+  {
+    "word": " hover",
+    "start": 139.815,
+    "end": 140.115
+  },
+  {
+    "word": " of",
+    "start": 140.115,
+    "end": 140.515
+  },
+  {
+    "word": " these",
+    "start": 140.515,
+    "end": 140.875
+  },
+  {
+    "word": " cards,",
+    "start": 140.875,
+    "end": 141.675
+  },
+  {
+    "word": " nothing",
+    "start": 141.675,
+    "end": 142.355
+  },
+  {
+    "word": " happens",
+    "start": 142.355,
+    "end": 142.895
+  },
+  {
+    "word": " just",
+    "start": 142.895,
+    "end": 143.255
+  },
+  {
+    "word": " yet.",
+    "start": 143.255,
+    "end": 144.015
+  },
+  {
+    "word": " So",
+    "start": 144.015,
+    "end": 144.575
+  },
+  {
+    "word": " how",
+    "start": 144.575,
+    "end": 144.735
+  },
+  {
+    "word": " do",
+    "start": 144.735,
+    "end": 144.875
+  },
+  {
+    "word": " we",
+    "start": 144.875,
+    "end": 144.995
+  },
+  {
+    "word": " switch",
+    "start": 144.995,
+    "end": 145.415
+  },
+  {
+    "word": " to",
+    "start": 145.415,
+    "end": 145.735
+  },
+  {
+    "word": " the",
+    "start": 145.735,
+    "end": 145.975
+  },
+  {
+    "word": " correct",
+    "start": 145.975,
+    "end": 146.45499999999998
+  },
+  {
+    "word": " variants",
+    "start": 146.45499999999998,
+    "end": 147.115
+  },
+  {
+    "word": " on",
+    "start": 147.115,
+    "end": 147.595
+  },
+  {
+    "word": " hover?",
+    "start": 147.595,
+    "end": 148.275
+  },
+  {
+    "word": " I'll",
+    "start": 148.275,
+    "end": 148.695
+  },
+  {
+    "word": " select",
+    "start": 148.695,
+    "end": 148.975
+  },
+  {
+    "word": " the",
+    "start": 148.975,
+    "end": 149.195
+  },
+  {
+    "word": " first",
+    "start": 149.195,
+    "end": 149.595
+  },
+  {
+    "word": " card",
+    "start": 149.595,
+    "end": 149.995
+  },
+  {
+    "word": " here.",
+    "start": 149.995,
+    "end": 150.755
+  },
+  {
+    "word": " I'll",
+    "start": 150.755,
+    "end": 151.335
+  },
+  {
+    "word": " head",
+    "start": 151.335,
+    "end": 151.45499999999998
+  },
+  {
+    "word": " over",
+    "start": 151.45499999999998,
+    "end": 151.635
+  },
+  {
+    "word": " to",
+    "start": 151.635,
+    "end": 151.79500000000002
+  },
+  {
+    "word": " the",
+    "start": 151.79500000000002,
+    "end": 151.95499999999998
+  },
+  {
+    "word": " cursor",
+    "start": 151.95499999999998,
+    "end": 152.355
+  },
+  {
+    "word": " property.",
+    "start": 152.355,
+    "end": 153.675
+  },
+  {
+    "word": " And",
+    "start": 153.25,
+    "end": 154.01
+  },
+  {
+    "word": " this",
+    "start": 154.01,
+    "end": 154.17
+  },
+  {
+    "word": " time",
+    "start": 154.17,
+    "end": 154.39
+  },
+  {
+    "word": " I'll",
+    "start": 154.39,
+    "end": 154.61
+  },
+  {
+    "word": " pick",
+    "start": 154.61,
+    "end": 154.87
+  },
+  {
+    "word": " set",
+    "start": 154.87,
+    "end": 155.35
+  },
+  {
+    "word": " variant.",
+    "start": 155.35,
+    "end": 156.71
+  },
+  {
+    "word": " Framer",
+    "start": 156.71,
+    "end": 157.07
+  },
+  {
+    "word": " knows",
+    "start": 157.07,
+    "end": 157.43
+  },
+  {
+    "word": " that",
+    "start": 157.43,
+    "end": 157.83
+  },
+  {
+    "word": " this",
+    "start": 157.83,
+    "end": 158.11
+  },
+  {
+    "word": " page",
+    "start": 158.11,
+    "end": 158.43
+  },
+  {
+    "word": " already",
+    "start": 158.43,
+    "end": 158.83
+  },
+  {
+    "word": " has",
+    "start": 158.83,
+    "end": 159.23
+  },
+  {
+    "word": " a",
+    "start": 159.23,
+    "end": 159.45
+  },
+  {
+    "word": " cursor",
+    "start": 159.45,
+    "end": 159.79
+  },
+  {
+    "word": " defined.",
+    "start": 159.79,
+    "end": 160.69
+  },
+  {
+    "word": " And",
+    "start": 160.69,
+    "end": 161.45
+  },
+  {
+    "word": " it",
+    "start": 161.45,
+    "end": 161.61
+  },
+  {
+    "word": " allows",
+    "start": 161.61,
+    "end": 161.89
+  },
+  {
+    "word": " me",
+    "start": 161.89,
+    "end": 162.09
+  },
+  {
+    "word": " to",
+    "start": 162.09,
+    "end": 162.23
+  },
+  {
+    "word": " simply",
+    "start": 162.23,
+    "end": 162.63
+  },
+  {
+    "word": " switch",
+    "start": 162.63,
+    "end": 163.13
+  },
+  {
+    "word": " its",
+    "start": 163.13,
+    "end": 163.55
+  },
+  {
+    "word": " variants.",
+    "start": 163.55,
+    "end": 164.55
+  },
+  {
+    "word": " Without",
+    "start": 164.55,
+    "end": 165.11
+  },
+  {
+    "word": " having",
+    "start": 165.11,
+    "end": 165.53
+  },
+  {
+    "word": " to",
+    "start": 165.53,
+    "end": 165.73
+  },
+  {
+    "word": " redo",
+    "start": 165.73,
+    "end": 166.09
+  },
+  {
+    "word": " all",
+    "start": 166.09,
+    "end": 166.39
+  },
+  {
+    "word": " of",
+    "start": 166.39,
+    "end": 166.51
+  },
+  {
+    "word": " these",
+    "start": 166.51,
+    "end": 166.67
+  },
+  {
+    "word": " settings.",
+    "start": 166.67,
+    "end": 167.35
+  },
+  {
+    "word": " So",
+    "start": 167.35,
+    "end": 167.69
+  },
+  {
+    "word": " I'll",
+    "start": 167.69,
+    "end": 167.93
+  },
+  {
+    "word": " go",
+    "start": 167.93,
+    "end": 168.07
+  },
+  {
+    "word": " over",
+    "start": 168.07,
+    "end": 168.37
+  },
+  {
+    "word": " all",
+    "start": 168.37,
+    "end": 168.57
+  },
+  {
+    "word": " of",
+    "start": 168.57,
+    "end": 168.69
+  },
+  {
+    "word": " these",
+    "start": 168.69,
+    "end": 168.91
+  },
+  {
+    "word": " cards.",
+    "start": 168.91,
+    "end": 169.71
+  },
+  {
+    "word": " Select",
+    "start": 169.71,
+    "end": 170.55
+  },
+  {
+    "word": " set",
+    "start": 170.55,
+    "end": 170.99
+  },
+  {
+    "word": " variant.",
+    "start": 170.99,
+    "end": 171.99
+  },
+  {
+    "word": " And",
+    "start": 171.99,
+    "end": 172.37
+  },
+  {
+    "word": " simply",
+    "start": 172.37,
+    "end": 172.69
+  },
+  {
+    "word": " pick",
+    "start": 172.69,
+    "end": 173.03
+  },
+  {
+    "word": " the",
+    "start": 173.03,
+    "end": 173.29
+  },
+  {
+    "word": " matching",
+    "start": 173.29,
+    "end": 173.73
+  },
+  {
+    "word": " variant.",
+    "start": 173.73,
+    "end": 174.79
+  },
+  {
+    "word": " There",
+    "start": 174.79,
+    "end": 175.19
+  },
+  {
+    "word": " are",
+    "start": 175.19,
+    "end": 175.43
+  },
+  {
+    "word": " no",
+    "start": 175.43,
+    "end": 175.75
+  },
+  {
+    "word": " settings",
+    "start": 175.75,
+    "end": 176.15
+  },
+  {
+    "word": " I",
+    "start": 176.15,
+    "end": 176.41
+  },
+  {
+    "word": " have",
+    "start": 176.41,
+    "end": 176.61
+  },
+  {
+    "word": " to",
+    "start": 176.61,
+    "end": 176.81
+  },
+  {
+    "word": " redo.",
+    "start": 176.81,
+    "end": 178.15
+  },
+  {
+    "word": " everything",
+    "start": 178.04,
+    "end": 178.44
+  },
+  {
+    "word": " gets",
+    "start": 178.44,
+    "end": 178.72
+  },
+  {
+    "word": " inherited",
+    "start": 178.72,
+    "end": 179.28
+  },
+  {
+    "word": " from",
+    "start": 179.28,
+    "end": 179.66
+  },
+  {
+    "word": " the",
+    "start": 179.66,
+    "end": 179.86
+  },
+  {
+    "word": " page",
+    "start": 179.86,
+    "end": 180.3
+  },
+  {
+    "word": " cursor.",
+    "start": 180.3,
+    "end": 181.04
+  },
+  {
+    "word": " And",
+    "start": 181.04,
+    "end": 183.86
+  },
+  {
+    "word": " just",
+    "start": 183.86,
+    "end": 184.06
+  },
+  {
+    "word": " like",
+    "start": 184.06,
+    "end": 184.22
+  },
+  {
+    "word": " that,",
+    "start": 184.22,
+    "end": 184.82
+  },
+  {
+    "word": " if",
+    "start": 184.82,
+    "end": 184.94
+  },
+  {
+    "word": " we",
+    "start": 184.94,
+    "end": 185.1
+  },
+  {
+    "word": " now",
+    "start": 185.1,
+    "end": 185.46
+  },
+  {
+    "word": " give",
+    "start": 185.46,
+    "end": 185.78
+  },
+  {
+    "word": " this",
+    "start": 185.78,
+    "end": 186.2
+  },
+  {
+    "word": " page",
+    "start": 186.2,
+    "end": 186.56
+  },
+  {
+    "word": " another",
+    "start": 186.56,
+    "end": 187.06
+  },
+  {
+    "word": " preview,",
+    "start": 187.06,
+    "end": 188.14
+  },
+  {
+    "word": " we'll",
+    "start": 188.14,
+    "end": 188.5
+  },
+  {
+    "word": " still",
+    "start": 188.5,
+    "end": 188.72
+  },
+  {
+    "word": " have",
+    "start": 188.72,
+    "end": 189.12
+  },
+  {
+    "word": " our",
+    "start": 189.12,
+    "end": 189.38
+  },
+  {
+    "word": " custom",
+    "start": 189.38,
+    "end": 189.82
+  },
+  {
+    "word": " circle",
+    "start": 189.82,
+    "end": 190.44
+  },
+  {
+    "word": " and",
+    "start": 190.44,
+    "end": 191.38
+  },
+  {
+    "word": " on",
+    "start": 191.38,
+    "end": 191.66
+  },
+  {
+    "word": " hover...",
+    "start": 191.66,
+    "end": 193.14
+  }
+]
