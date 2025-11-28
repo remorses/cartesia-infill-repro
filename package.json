@@ -1,0 +1,19 @@
+{
+  "name": "cartesia-infill-repro",
+  "version": "1.0.0",
+  "description": "Reproduce Cartesia infill issues",
+  "type": "module",
+  "scripts": {
+    "test-infill": "tsx scripts/test-infill.ts"
+  },
+  "dependencies": {
+    "@cartesia/cartesia-js": "^2.2.9",
+    "@elevenlabs/elevenlabs-js": "^2.3.0",
+    "unstorage": "^1.14.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
