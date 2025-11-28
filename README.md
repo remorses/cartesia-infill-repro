@@ -5,6 +5,10 @@ Reproduce Cartesia infill audio quality issues.
 ## Setup
 
 ```bash
+# Install Node.js 22+
+brew install node@22
+# Or download from https://nodejs.org
+
 npm install
 
 echo "CARTESIA_KEY=your-api-key" > .env
