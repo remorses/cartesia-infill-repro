@@ -4,10 +4,11 @@
   "description": "Reproduce Cartesia infill issues",
   "type": "module",
   "scripts": {
-    "test-infill": "tsx scripts/test-infill.ts"
+    "test-infill": "bun scripts/test-infill.ts"
   },
   "dependencies": {
     "@cartesia/cartesia-js": "^2.2.9",
+    "dotenv": "^17.2.3",
     "unstorage": "^1.14.4"
   },
   "devDependencies": {

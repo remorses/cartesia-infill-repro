@@ -34,9 +34,9 @@ async function getWordTimestamps({ audioPath }: { audioPath: string }): Promise<
   }
 
   console.log(`Fetching timestamps for ${audioPath}...`)
-  const audioStream = fs.createReadStream(audioPath)
+  const file = Bun.file(audioPath)
 
-  const transcription = await cartesia.stt.transcribe(audioStream, {
+  const transcription = await cartesia.stt.transcribe(file, {
     model: 'ink-whisper',
     language: 'en',
     timestampGranularities: ['word'],
