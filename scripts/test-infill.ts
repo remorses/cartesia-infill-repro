@@ -51,10 +51,17 @@ async function extractSegment(audioPath: string, start: number, end: number, out
 }
 
 async function joinAudio(files: string[], outPath: string): Promise<void> {
-  const listPath = outPath + '.list.txt'
-  fs.writeFileSync(listPath, files.map(f => `file '${f}'`).join('\n'))
-  await execAsync(`ffmpeg -y -f concat -safe 0 -i "${listPath}" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`)
-  fs.unlinkSync(listPath)
+  // Use acrossfade filter to blend audio segments
+  const crossfadeMs = 50
+  const [left, gen, right] = files
+  
+  // Crossfade left+gen, then result+right
+  await execAsync(
+    `ffmpeg -y -i "${left}" -i "${gen}" -i "${right}" -filter_complex \
+    "[0][1]acrossfade=d=${crossfadeMs / 1000}:c1=tri:c2=tri[a01]; \
+     [a01][2]acrossfade=d=${crossfadeMs / 1000}:c1=tri:c2=tri[out]" \
+    -map "[out]" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`
+  )
 }
 
 async function testInfill(
@@ -72,8 +79,12 @@ async function testInfill(
   const middleWords = words.slice(startIdx + leftCount, startIdx + leftCount + middleCount)
   const rightWords = words.slice(startIdx + leftCount + middleCount, startIdx + leftCount + middleCount + rightCount)
 
+  const leftText = leftWords.map(w => w.word).join(' ')
   const middleText = middleWords.map(w => w.word).join(' ')
-  const slug = middleText.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 40)
+  const rightText = rightWords.map(w => w.word).join(' ')
+  const fullText = leftText + middleText + rightText
+
+  const toSlug = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40)
   const prefix = String(index).padStart(3, '0')
 
   console.log(`\n[${prefix}] Infilling: "${middleText}"`)
@@ -83,10 +94,10 @@ async function testInfill(
   const rightStart = rightWords[0].start
   const rightEnd = rightWords[rightWords.length - 1].end
 
-  const leftPath = path.join(outDir, `${prefix}-left-${slug}.wav`)
-  const rightPath = path.join(outDir, `${prefix}-right-${slug}.wav`)
-  const genPath = path.join(outDir, `${prefix}-gen-${slug}.wav`)
-  const finalPath = path.join(outDir, `${prefix}-final-${slug}.wav`)
+  const leftPath = path.join(outDir, `${prefix}-left-${toSlug(leftText)}.wav`)
+  const rightPath = path.join(outDir, `${prefix}-right-${toSlug(rightText)}.wav`)
+  const genPath = path.join(outDir, `${prefix}-gen-${toSlug(middleText)}.wav`)
+  const finalPath = path.join(outDir, `${prefix}-final-${toSlug(fullText)}.wav`)
 
   if (fs.existsSync(finalPath)) {
     console.log('Skipping (exists)')
