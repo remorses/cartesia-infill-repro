@@ -129,7 +129,7 @@ async function testInfill(
 
 async function main() {
   const audioPath = path.join(process.cwd(), 'scripts', 'example-recording.mp3')
-  const outDir = path.join(process.cwd(), 'scripts', 'infill-test')
+  const outDir = path.join(process.cwd(), 'output')
   fs.mkdirSync(outDir, { recursive: true })
 
   const words = await getWordTimestamps(audioPath)

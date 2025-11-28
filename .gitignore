@@ -1,12 +1,9 @@
 node_modules/
 .env
 
-# Script directories
+# Cache
 scripts/cache/
 scripts/temp/
-scripts/infill-test/
-
-
 
 # OS
 .DS_Store
