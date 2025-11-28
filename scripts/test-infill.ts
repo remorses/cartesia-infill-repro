@@ -50,18 +50,29 @@ async function extractSegment(audioPath: string, start: number, end: number, out
   )
 }
 
-async function joinAudio(files: string[], outPath: string): Promise<void> {
-  // Use acrossfade filter to blend audio segments
-  const crossfadeMs = 50
-  const [left, gen, right] = files
-  
-  // Crossfade left+gen, then result+right
-  await execAsync(
-    `ffmpeg -y -i "${left}" -i "${gen}" -i "${right}" -filter_complex \
-    "[0][1]acrossfade=d=${crossfadeMs / 1000}:c1=tri:c2=tri[a01]; \
-     [a01][2]acrossfade=d=${crossfadeMs / 1000}:c1=tri:c2=tri[out]" \
-    -map "[out]" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`
+async function addFadeOut(inPath: string, outPath: string, fadeMs: number): Promise<void> {
+  // Get duration first
+  const { stdout } = await execAsync(
+    `ffprobe -v error -show_entries format=duration -of csv=p=0 "${inPath}"`
   )
+  const duration = parseFloat(stdout.trim())
+  const fadeStart = Math.max(0, duration - fadeMs / 1000)
+  await execAsync(
+    `ffmpeg -y -i "${inPath}" -af "afade=t=out:st=${fadeStart}:d=${fadeMs / 1000}" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`
+  )
+}
+
+async function addFadeIn(inPath: string, outPath: string, fadeMs: number): Promise<void> {
+  await execAsync(
+    `ffmpeg -y -i "${inPath}" -af "afade=t=in:st=0:d=${fadeMs / 1000}" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`
+  )
+}
+
+async function joinAudio(files: string[], outPath: string): Promise<void> {
+  const listPath = outPath + '.list.txt'
+  fs.writeFileSync(listPath, files.map(f => `file '${f}'`).join('\n'))
+  await execAsync(`ffmpeg -y -f concat -safe 0 -i "${listPath}" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`)
+  fs.unlinkSync(listPath)
 }
 
 async function testInfill(
@@ -107,8 +118,16 @@ async function testInfill(
   await extractSegment(audioPath, leftStart, leftEnd, leftPath)
   await extractSegment(audioPath, rightStart, rightEnd, rightPath)
 
-  const leftStream = fs.createReadStream(leftPath)
-  const rightStream = fs.createReadStream(rightPath)
+  // Create faded versions for infill API
+  const fadeMs = 50
+  const leftFadedPath = leftPath.replace('.wav', '-faded.wav')
+  const rightFadedPath = rightPath.replace('.wav', '-faded.wav')
+  
+  await addFadeOut(leftPath, leftFadedPath, fadeMs)
+  await addFadeIn(rightPath, rightFadedPath, fadeMs)
+
+  const leftStream = fs.createReadStream(leftFadedPath)
+  const rightStream = fs.createReadStream(rightFadedPath)
 
   const response = await cartesia.infill.bytes(leftStream, rightStream, {
     modelId: 'sonic-2',
@@ -119,6 +138,10 @@ async function testInfill(
     outputFormatEncoding: 'pcm_s16le',
     outputFormatSampleRate: 44100,
   })
+  
+  // Clean up faded temp files
+  fs.unlinkSync(leftFadedPath)
+  fs.unlinkSync(rightFadedPath)
 
   const genBuffer = await buffer(response)
   fs.writeFileSync(genPath, genBuffer)
