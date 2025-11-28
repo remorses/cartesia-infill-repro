@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "@cartesia/cartesia-js": "^2.2.9",
-    "@elevenlabs/elevenlabs-js": "^2.3.0",
     "unstorage": "^1.14.4"
   },
   "devDependencies": {

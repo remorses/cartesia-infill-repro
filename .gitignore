@@ -6,9 +6,7 @@ scripts/cache/
 scripts/temp/
 scripts/infill-test/
 
-# Audio files
-*.mp3
-*.wav
+
 
 # OS
 .DS_Store

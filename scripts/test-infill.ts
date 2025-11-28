@@ -2,7 +2,6 @@ import * as fs from 'node:fs'
 import * as path from 'node:path'
 import { createStorage } from 'unstorage'
 import fsDriver from 'unstorage/drivers/fs'
-import { ElevenLabsClient } from '@elevenlabs/elevenlabs-js'
 import { CartesiaClient } from '@cartesia/cartesia-js'
 import { Readable } from 'node:stream'
 import { buffer } from 'node:stream/consumers'
@@ -21,10 +20,6 @@ const storage = createStorage({
   }),
 })
 
-const elevenlabs = new ElevenLabsClient({
-  apiKey: env.ELEVENLABS_KEY,
-})
-
 const cartesia = new CartesiaClient({
   apiKey: env.CARTESIA_KEY,
 })
@@ -39,38 +34,24 @@ async function getWordTimestamps({ audioPath }: { audioPath: string }): Promise<
   }
 
   console.log(`Fetching timestamps for ${audioPath}...`)
-  const audioBuffer = fs.readFileSync(audioPath)
-  const blob = new Blob([Uint8Array.from(audioBuffer)])
+  const audioStream = fs.createReadStream(audioPath)
 
-  const transcription = await elevenlabs.speechToText.convert({
-    file: blob,
-    modelId: 'scribe_v1',
-    timestampsGranularity: 'word',
-    languageCode: 'en',
-    tagAudioEvents: true,
-    diarize: true,
+  const transcription = await cartesia.stt.transcribe(audioStream, {
+    model: 'ink-whisper',
+    language: 'en',
+    timestampGranularities: ['word'],
   })
 
-  if ('message' in transcription) {
-    throw new Error('Webhook response received unexpectedly')
-  }
-
-  if ('transcripts' in transcription) {
-    throw new Error('Multi-channel audio not supported')
-  }
-
   const chunks: Word[] = transcription.words?.map((w) => {
-    const start = w.start ?? 0
-    const end = w.end ?? 0
     return {
       type: 'word',
       attrs: {
-        value: w.text,
-        startInSeconds: start,
-        duration: end - start,
+        value: w.word,
+        startInSeconds: w.start,
+        duration: w.end - w.start,
         videoSource: `video-${path.basename(audioPath)}` as const,
         audioSource: `video-${path.basename(audioPath)}` as const,
-        audioStartInSeconds: start,
+        audioStartInSeconds: w.start,
       },
     }
   }) ?? []
