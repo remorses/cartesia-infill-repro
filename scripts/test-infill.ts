@@ -46,32 +46,33 @@ async function getWordTimestamps(audioPath: string): Promise<Word[]> {
 async function extractSegment(audioPath: string, start: number, end: number, outPath: string): Promise<void> {
   const duration = end - start
   await execAsync(
-    `ffmpeg -y -i "${audioPath}" -ss ${start} -t ${duration} -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`
+    `ffmpeg -y -i "${audioPath}" -ss ${start} -t ${duration} -ar 44100 -ac 1 -acodec pcm_s16le -f wav "${outPath}"`
   )
 }
 
-async function addFadeOut(inPath: string, outPath: string, fadeMs: number): Promise<void> {
-  // Get duration first
+async function addFadeOutAndSilence(inPath: string, outPath: string, fadeMs: number, silenceMs: number): Promise<void> {
   const { stdout } = await execAsync(
     `ffprobe -v error -show_entries format=duration -of csv=p=0 "${inPath}"`
   )
   const duration = parseFloat(stdout.trim())
   const fadeStart = Math.max(0, duration - fadeMs / 1000)
+  // Fade out then pad with silence at end
   await execAsync(
-    `ffmpeg -y -i "${inPath}" -af "afade=t=out:st=${fadeStart}:d=${fadeMs / 1000}" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`
+    `ffmpeg -y -i "${inPath}" -af "afade=t=out:st=${fadeStart}:d=${fadeMs / 1000},apad=pad_dur=${silenceMs / 1000}" -ar 44100 -ac 1 -acodec pcm_s16le -f wav "${outPath}"`
   )
 }
 
-async function addFadeIn(inPath: string, outPath: string, fadeMs: number): Promise<void> {
+async function addSilenceAndFadeIn(inPath: string, outPath: string, fadeMs: number, silenceMs: number): Promise<void> {
+  // Delay audio (adds silence at start) then fade in
   await execAsync(
-    `ffmpeg -y -i "${inPath}" -af "afade=t=in:st=0:d=${fadeMs / 1000}" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`
+    `ffmpeg -y -i "${inPath}" -af "adelay=${silenceMs}|${silenceMs},afade=t=in:st=${silenceMs / 1000}:d=${fadeMs / 1000}" -ar 44100 -ac 1 -acodec pcm_s16le -f wav "${outPath}"`
   )
 }
 
 async function joinAudio(files: string[], outPath: string): Promise<void> {
   const listPath = outPath + '.list.txt'
   fs.writeFileSync(listPath, files.map(f => `file '${f}'`).join('\n'))
-  await execAsync(`ffmpeg -y -f concat -safe 0 -i "${listPath}" -ar 44100 -ac 1 -c:a pcm_s16le "${outPath}"`)
+  await execAsync(`ffmpeg -y -f concat -safe 0 -i "${listPath}" -ar 44100 -ac 1 -acodec pcm_s16le -f wav "${outPath}"`)
   fs.unlinkSync(listPath)
 }
 
@@ -90,10 +91,10 @@ async function testInfill(
   const middleWords = words.slice(startIdx + leftCount, startIdx + leftCount + middleCount)
   const rightWords = words.slice(startIdx + leftCount + middleCount, startIdx + leftCount + middleCount + rightCount)
 
-  const leftText = leftWords.map(w => w.word).join(' ')
-  const middleText = middleWords.map(w => w.word).join(' ')
-  const rightText = rightWords.map(w => w.word).join(' ')
-  const fullText = leftText + middleText + rightText
+  const leftText = leftWords.map(w => w.word).join('').trim()
+  const middleText = middleWords.map(w => w.word).join('').trim()
+  const rightText = rightWords.map(w => w.word).join('').trim()
+  const fullText = `${leftText} ${middleText} ${rightText}`
 
   const toSlug = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40)
   const prefix = String(index).padStart(3, '0')
@@ -115,22 +116,28 @@ async function testInfill(
     return
   }
 
-  await extractSegment(audioPath, leftStart, leftEnd, leftPath)
-  await extractSegment(audioPath, rightStart, rightEnd, rightPath)
+  const tempLeftPath = leftPath.replace('.wav', '-temp.wav')
+  const tempRightPath = rightPath.replace('.wav', '-temp.wav')
+  
+  await extractSegment(audioPath, leftStart, leftEnd, tempLeftPath)
+  await extractSegment(audioPath, rightStart, rightEnd, tempRightPath)
 
-  // Create faded versions for infill API
+  // Create faded versions with silence
   const fadeMs = 50
-  const leftFadedPath = leftPath.replace('.wav', '-faded.wav')
-  const rightFadedPath = rightPath.replace('.wav', '-faded.wav')
+  const silenceMs = 300
 
-  await addFadeOut(leftPath, leftFadedPath, fadeMs)
-  await addFadeIn(rightPath, rightFadedPath, fadeMs)
+  await addFadeOutAndSilence(tempLeftPath, leftPath, fadeMs, silenceMs)
+  await addSilenceAndFadeIn(tempRightPath, rightPath, fadeMs, silenceMs)
+  
+  // Clean up temp extracts
+  fs.unlinkSync(tempLeftPath)
+  fs.unlinkSync(tempRightPath)
 
-  const leftStream = fs.createReadStream(leftFadedPath)
-  const rightStream = fs.createReadStream(rightFadedPath)
+  const leftStream = fs.createReadStream(leftPath)
+  const rightStream = fs.createReadStream(rightPath)
 
   const response = await cartesia.infill.bytes(leftStream, rightStream, {
-    modelId: 'sonic-3',
+    modelId: 'sonic-2',
     language: 'en',
     transcript: middleText,
     voiceId,
@@ -138,10 +145,6 @@ async function testInfill(
     outputFormatEncoding: 'pcm_s16le',
     outputFormatSampleRate: 44100,
   })
-
-  // Clean up faded temp files
-  fs.unlinkSync(leftFadedPath)
-  fs.unlinkSync(rightFadedPath)
 
   const genBuffer = await buffer(response)
   fs.writeFileSync(genPath, genBuffer)
